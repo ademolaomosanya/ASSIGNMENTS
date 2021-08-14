@@ -1,0 +1,241 @@
+body{
+    margin : 0;
+    padding-top: 119.5px;
+   }
+   
+   .header{
+     display: flex;
+     flex-direction: row;
+    position: fixed; 
+    background-color: black;
+    opacity: 0.65;
+    width: 100%;
+    top:0;
+    left: 0;
+    padding: 40px 70px 20px 70px;
+   
+   }
+   
+   .header img{
+     height: 60px;
+    
+   }
+   
+   .link{
+       margin-top: 20px;
+       margin-left: 27px;
+   }
+   
+   
+   .link a{
+       transition-duration: 0.4s;
+       text-decoration: none;
+       color: #fff;
+      background-color: transparent;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+       top: 100%;
+       padding: 17px;
+       
+   }
+   .link span{
+       transition-duration: 0.4s;
+       text-decoration: none;
+       color: #fff;
+      background-color: transparent;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+       
+       border-top: 2px solid;
+       padding: 17px;
+       border-color: green;
+   }
+   
+   .link a:hover{
+   color: green;
+   /* background-color: green; */
+   
+   
+   }
+   
+   
+   .mainBody{
+       margin: 0;
+    background-color:white;
+    
+    }
+    
+   .contact{
+       display: flex;
+       flex-direction: row;
+       padding: 50px 70px 30px 70px;
+       background-color: rgb(236, 236, 236);
+       margin: 0;
+   }
+   .contact h2{
+       font-family: 'Source Sans Pro', sans-serif;
+       font-size: 50px;
+       font-weight: bold;
+       text-transform: capitalize;
+   }
+   
+   .contact h2 strong{
+       color:green;
+   }
+   .contact span{
+       color:green;
+   }
+   
+   .contact a{
+       font-size: 16px;
+       margin-left: 700px;
+       text-decoration: none;
+       color:black;
+   }
+   
+   .message{
+   text-align: center;
+   margin: 0px 0px 10px;
+   padding: 0 0 50px;
+   }
+   .message h1{
+       font-family: 'Source Sans Pro', sans-serif;
+       font-size: 50px;
+       font-weight: bold;
+       margin: 0px 0px 10px;
+       padding-top: 40px;
+   }
+   .message p{
+       font-size: 14px;
+       margin: 0;
+       font-family: 'roboto', sans-serif;
+   }
+   .three{
+       color: green;
+   }
+   
+   
+   
+   .form{
+       padding: 20px 70px 20px 70px ;
+       justify-content: space-between;
+       opacity: 0.3;
+   }
+   
+   input[type=text]{
+       width: 49%;
+       padding: 12px 20px;
+       margin-bottom: 8px;
+       box-sizing: border-box;
+   }
+   input[type=email]{
+       width: 49%;
+       padding: 12px 20px;
+       margin-bottom: 8px;  
+    }
+   
+   
+    textarea {
+       width: 98.5%;
+       height: 150px;
+       padding: 12px 20px;
+       box-sizing: border-box;
+       border: 1px solid black;
+       resize: none;
+     }
+   
+   .location{
+       display: flex;
+       flex-direction: row;
+       padding: 20px 70px 20px 70px ;
+       justify-content: space-between;
+   }
+   
+   .mylocation{
+     
+     margin-bottom: 15px;
+     border: 1px solid #000;
+    margin:20px ;
+     /* width: 100%; */
+     border: 1px solid #d6e0e2;
+     text-align: center;
+     font-size: 14px;
+     font-family: 'Roboto', sans-serif;
+     padding: 40px 40px 40px 40px;
+    height: 150px;
+    width: 250px;
+   }
+   
+   .inputbutton{
+       text-align: center;
+     
+       justify-content: space-between;
+       padding: 20px 70px 20px 70px
+   }
+   
+   
+   button{
+   min-width: 170px;
+      height: 48px; 
+       border: 1px solid transparent;;
+       color:white;
+       padding: 15px 32px;
+       text-align: center;
+      margin: 13px;
+       display: inline-block;
+       text-transform: uppercase;
+       border-radius: 6px;
+       background: #008040;
+      cursor: pointer;
+      transition-duration: 0.4s;
+   }
+   
+    button:hover{
+      
+       background-color:rgb(224, 221, 221);
+   
+   }
+   
+   
+   footer{
+    background-color: black; 
+    text-align: center;
+    margin: 0;
+    /* position: relative; */
+    width:100%;
+    color: white;
+   box-sizing: border-box;
+   }
+   
+   footer img{
+       height: 60px;
+       padding: 30px; 
+   }
+   
+   
+   footer p  {
+       font-size: 14px;
+       font-family: 'Roboto', sans-serif;
+   
+   
+   }
+   
+   footer ul {
+       display: inline-block;
+       padding: 0 0 47px;
+   }
+   
+   .copyRight{
+       color: grey;
+      border-top:grey solid 1px;
+      margin: 0;
+      padding: 30px 0; 
+   }
+   
+   .copyRight a{
+       text-decoration: none;
+   }
+   
+   .copyRight p a{
+       color:honeydew;
+   }
