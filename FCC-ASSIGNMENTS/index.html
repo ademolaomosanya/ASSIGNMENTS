@@ -1,0 +1,209 @@
+<script>
+  //1.Convert Celsius to Fahrenheit
+function convertToF(celsius) {
+  let fahrenheit = celsius * (9 / 5) + 32;
+  return fahrenheit;
+}
+
+console.log(convertToF(30));
+
+//2.Reverse a String
+function reverseString(str) {
+  var reversedStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+  }
+  return reversedStr;
+}
+console.log(reverseString("hello"));
+
+//3.Factorialize a Number
+function factorialize(num) {
+  for (var products = 1; num > 0; num--) {
+    products *= num;
+  }
+  return products;
+}
+
+console.log(factorialize(5));
+
+//4.Find the Longest Word in a String
+function findLongestWordLength(str) {
+  let words = str.split(" ");
+  let maxLength = "";
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > maxLength) {
+      maxLength = words[i].length;
+    }
+  }
+  return maxLength;
+}
+console.log(
+  findLongestWordLength("The quick brown fox jumped over the lazy dog")
+);
+// 5.Return Largest Numbers in Arrays
+// function largestOfFour(arr) {
+//   let results = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let largestNumber = arr[i][0];
+//     for (let j = 1; j  <= arr[i].length; j++) {
+//       if (arr[i][j] > largestNumber) {
+//         largestNumber = arr[i][j];
+//       }
+//     }
+//     results[i] = largestNumber;
+//   }
+
+//   return results;
+// }
+// console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+
+
+
+function largestOfFour(arr) {
+  let results = [];
+  for (let i = 0; i < arr.length; i++){
+let largestNumber = arr[i][0];
+for(let j = i; j <= arr[i].length; j++){
+  if(arr[i][j] > largestNumber){
+largestNumber = arr[i][j];
+  }
+}
+ results[i] =largestNumber
+  }
+return results
+}
+
+console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+
+
+// 6.Confirm the Ending
+function confirmEnding(str, target) {
+
+  return str.slice(str.length - target.length) === target;
+ 
+}
+console.log(confirmEnding("He has to give me a new name", "name"));
+
+//7.Repeat a String Repeat a String
+function repeatStringNumTimes(str, num) {
+  var accumulatedStr = "";
+
+  while (num > 0) {                        
+    accumulatedStr += str;
+    num--;
+  }
+
+ 
+
+  return accumulatedStr;
+}
+
+console.log(repeatStringNumTimes("abc", 3));
+
+//8.Truncate a String
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
+  }
+}
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+
+//9.Finders Keepers
+function findKeepers(arr, func) {
+  let num = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    num = arr[i];
+    if (func(num)) {
+      return num;
+    }
+  }
+
+  return undefined;
+}
+console.log(findKeepers([1, 2, 3, 4], num => num % 2 === 0));
+
+
+//10.Boo who
+//Check if a value is classified as a boolean primitive. Return true or false.
+// Boolean primitives are true and false.
+
+function booWho(bool) {
+  return typeof bool === "boolean";
+}
+
+console.log(booWho(null));
+
+
+
+
+//11.Slice and Splice
+function frankenSplice(arr1, arr2, n) {
+  let localArray = arr2.slice();
+  for (let i = 0; i < arr1.length; i++) {
+    localArray.splice(n, 0, arr1[i]);
+    n++;
+  }
+  return localArray;
+}
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+
+//12.Falsy Bouncer
+function bouncer(arr) {
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) newArray.push(arr[i]);
+  }
+  return newArray;
+}
+
+console.log(bouncer([7, "ate", "", false, 9]));
+//13.Where do i belong
+function getIndexToIns(arr, num) {
+  arr.sort((a, b) => a - b);
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] >= num)
+      return i;
+  }
+
+  return arr.length;
+}
+console.log(getIndexToIns([40, 60], 50));
+
+//14.Mutation
+function mutation(arr) {
+  let test = arr[1].toLowerCase();
+  let target = arr[0].toLowerCase();
+  for (let i = 0; i < test.length; i++) {
+    if (target.indexOf(test[i]) < 0) return false;
+  }
+  return true;
+}
+console.log(mutation(["hello", "hey"]));
+
+//15.chunky Monkey
+function chunkArrayInGroups(arr, size) {
+  let temp = [];
+  let result = [];
+
+  for (let a = 0; a < arr.length; a++) {
+    if (a % size !== size - 1) temp.push(arr[a]);
+    else {
+      temp.push(arr[a]);
+      result.push(temp);
+      temp = [];
+    }
+  }
+
+  if (temp.length !== 0) result.push(temp);
+  return result;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+</script>
