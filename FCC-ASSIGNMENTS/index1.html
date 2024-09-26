@@ -1,0 +1,45 @@
+<head>
+  <style>
+    h1 {
+      color: black;
+      font-size: 700 32px/40px;
+      font-family: BlinkMacSystemFont, -apple-system, Segoe UI, RobotoHelvetica,
+        Arial, sans-serif;
+      margin: 0 auto 12px;
+      padding: 0;
+    }
+
+    p {
+      margin: 0 0 12px;
+      padding-right: 400px;
+    }
+  </style>
+</head>
+<div id="container"></div>
+<div id="paragraph"></div>
+<div id="secondHeading"></div>
+<div id="secondParagraph"></div>
+
+<script>
+  const container = document.getElementById("container");
+  const heading = document.createElement("h1");
+  heading.innerText = "An Introduction to JavaScript";
+  container.append(heading);
+
+  const paragraph = document.getElementById("paragraph");
+  const firstParagraph = document.createElement("p");
+  firstParagraph.innerText =
+    "Let’s see what’s so special about JavaScript, what we can achieve with it, and what other technologies play well with it.";
+  paragraph.append(firstParagraph);
+
+  const secondHeading = document.getElementById("secondHeading");
+  const headings = document.createElement("h1");
+  headings.innerText = "What is JavaScript?";
+  secondHeading.append(headings);
+
+  const secondParagraph = document.getElementById("secondParagraph");
+  const words = document.createElement("p");
+  words.innerText =
+    "JavaScript was initially created to “make web pages alive”.The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.In this aspect, JavaScript is very different from another language called Java.";
+  secondParagraph.append(words);
+</script>
